@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67AE4C2527D8B3490005B721 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE4C2427D8B3490005B721 /* ItemCell.swift */; };
 		67E7712527D21471008F2472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7712427D21471008F2472 /* AppDelegate.swift */; };
 		67E7712727D21471008F2472 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7712627D21471008F2472 /* SceneDelegate.swift */; };
 		67E7712C27D21471008F2472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E7712A27D21471008F2472 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67AE4C2427D8B3490005B721 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		67E7712127D21471008F2472 /* tabviewdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabviewdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E7712427D21471008F2472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67E7712627D21471008F2472 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67AE4C2327D8B30A0005B721 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				67AE4C2427D8B3490005B721 /* ItemCell.swift */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
 		67E7711827D21471008F2472 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		67E7712327D21471008F2472 /* tabviewdemo */ = {
 			isa = PBXGroup;
 			children = (
+				67AE4C2327D8B30A0005B721 /* layout */,
 				67E7712427D21471008F2472 /* AppDelegate.swift */,
 				67E7712627D21471008F2472 /* SceneDelegate.swift */,
 				67E7712A27D21471008F2472 /* Main.storyboard */,
@@ -266,6 +277,7 @@
 			files = (
 				67E7715727D2168B008F2472 /* Item.swift in Sources */,
 				67E7715527D21550008F2472 /* ItemsViewController.swift in Sources */,
+				67AE4C2527D8B3490005B721 /* ItemCell.swift in Sources */,
 				67E7712527D21471008F2472 /* AppDelegate.swift in Sources */,
 				67E7715927D21BB8008F2472 /* ItemStore.swift in Sources */,
 				67E7712727D21471008F2472 /* SceneDelegate.swift in Sources */,
