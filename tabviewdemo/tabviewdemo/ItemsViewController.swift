@@ -34,5 +34,12 @@ class ItemsViewController: UITableViewController {
         tableView.scrollIndicatorInsets = insets
     }
     
+    @IBAction func addNewItem(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func toggleEditingMode(sender: AnyObject){
+        
+    }
     
 }
