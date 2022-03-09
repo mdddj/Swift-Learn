@@ -34,10 +34,15 @@ class ItemsViewController: UITableViewController {
         tableView.scrollIndicatorInsets = insets
     }
     
+    //添加新行
     @IBAction func addNewItem(sender: AnyObject) {
-        
+        itemStore.createItem()
+        let lastRow = tableView.numberOfRows(inSection: 0)
+        let indexPath = IndexPath(row: lastRow, section: 0)
+        tableView.insertRows(at: [indexPath], with: .automatic)
     }
     
+    //编辑新行
     @IBAction func toggleEditingMode(sender: AnyObject){
         if isEditing {
             sender.setTitle("Edit", for: .normal)
@@ -48,6 +53,35 @@ class ItemsViewController: UITableViewController {
             sender.setTitle("Done", for: .normal)
             setEditing(true, animated: true)
         }
+    }
+    
+    //执行删除
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if(editingStyle == .delete){
+            
+            let item = itemStore.allItems[indexPath.row]
+            let title = "删除\(item.name)?"
+            let message = "您确定要删除这个项目吗?"
+            let ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+            let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+            ac.addAction(cancelAction)
+            let deleteActin = UIAlertAction(title: "删除", style: .destructive) { UIAlertAction in
+                self.itemStore.removeItem(item: item)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+            }
+            ac.addAction(deleteActin)
+            
+            //显示弹窗
+            present(ac,animated: true,completion: nil)
+            
+            
+            
+        }
+    }
+    
+    //移动目标
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        itemStore.moveItemAtIndex(formIndex: sourceIndexPath.row, toIndex: destinationIndexPath.row) //移动数据源
     }
     
 }

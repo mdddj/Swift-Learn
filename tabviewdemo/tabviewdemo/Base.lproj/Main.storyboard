@@ -24,7 +24,7 @@
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Edit"/>
                                     <connections>
-                                        <action selector="addNewItemWithSender:" destination="TSv-lZ-3o9" eventType="touchUpInside" id="Ai3-13-1mM"/>
+                                        <action selector="toggleEditingModeWithSender:" destination="TSv-lZ-3o9" eventType="touchUpInside" id="AhS-HL-yLY"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hro-dW-564">
@@ -32,7 +32,7 @@
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Add"/>
                                     <connections>
-                                        <action selector="toggleEditingModeWithSender:" destination="TSv-lZ-3o9" eventType="touchUpInside" id="LjU-9b-fa3"/>
+                                        <action selector="addNewItemWithSender:" destination="TSv-lZ-3o9" eventType="touchUpInside" id="fQx-IG-jb9"/>
                                     </connections>
                                 </button>
                             </subviews>

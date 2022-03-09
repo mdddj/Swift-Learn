@@ -22,4 +22,20 @@ class ItemStore {
             createItem()
         }
     }
+    //删除元素
+    func removeItem(item: Item){
+        if let  index = allItems.firstIndex(of: item) {
+            allItems.remove(at: index)
+        }
+    }
+    
+    //移动顺序
+    func moveItemAtIndex(formIndex: Int,toIndex:Int){
+        if(formIndex == toIndex){
+            return
+        }
+        let moveItem = allItems[formIndex]
+        allItems.remove(at: formIndex)
+        allItems.insert(moveItem, at: toIndex)
+    }
 }
