@@ -19,6 +19,7 @@ class ItemsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
+        cell.updateLabels()
         let item = itemStore.allItems[indexPath.row]
 //        cell.textLabel?.text = item.name
 //        cell.detailTextLabel?.text = "$\(item.valueInDollars)"
@@ -27,6 +28,8 @@ class ItemsViewController: UITableViewController {
         cell.valueLabel.text = "\(item.valueInDollars)"
         return cell
     }
+    
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +40,11 @@ class ItemsViewController: UITableViewController {
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
         
-        tableView.rowHeight = 65 //设置子项目的高度
+        //tableView.rowHeight = 65 //设置子项目的高度
+        
+        //动态计算高度
+        tableView.rowHeight = UITableView.automaticDimension // UITableView.automaticDimension 是rowHeight属性的默认值
+        tableView.estimatedRowHeight  = 65 // estimatedRowHeight 可以提高UITableView的性能
     }
     
     //添加新行
