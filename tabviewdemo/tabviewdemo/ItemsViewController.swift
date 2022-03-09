@@ -39,7 +39,15 @@ class ItemsViewController: UITableViewController {
     }
     
     @IBAction func toggleEditingMode(sender: AnyObject){
-        
+        if isEditing {
+            sender.setTitle("Edit", for: .normal)
+            setEditing(false, animated: true)
+        }
+        else
+        {
+            sender.setTitle("Done", for: .normal)
+            setEditing(true, animated: true)
+        }
     }
     
 }
