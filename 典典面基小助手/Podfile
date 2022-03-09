@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target '典典面基小助手' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for 典典面基小助手
+  pod 'Alamofire', '~> 5.5'
+
+  target '典典面基小助手Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target '典典面基小助手UITests' do
+    # Pods for testing
+  end
+
+end
