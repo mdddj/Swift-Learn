@@ -83,7 +83,6 @@ class ItemsViewController: UITableViewController {
                 tableView.deleteRows(at: [indexPath], with: .automatic)
             }
             ac.addAction(deleteActin)
-            
             //显示弹窗
             present(ac,animated: true,completion: nil)
             
@@ -96,5 +95,4 @@ class ItemsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         itemStore.moveItemAtIndex(formIndex: sourceIndexPath.row, toIndex: destinationIndexPath.row) //移动数据源
     }
-    
 }
