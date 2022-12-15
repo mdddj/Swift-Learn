@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67E31BB62851A03400A17336 /* styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E31BB52851A03400A17336 /* styles.swift */; };
+		67E31BB82851A64800A17336 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E31BB72851A64800A17336 /* AccountView.swift */; };
 		67F9B5102848589300D0E208 /* swiftui_demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F9B50F2848589300D0E208 /* swiftui_demoApp.swift */; };
 		67F9B5122848589300D0E208 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F9B5112848589300D0E208 /* ContentView.swift */; };
 		67F9B5142848589500D0E208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F9B5132848589500D0E208 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67E31BB52851A03400A17336 /* styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = styles.swift; sourceTree = "<group>"; };
+		67E31BB72851A64800A17336 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		67F9B50C2848589300D0E208 /* swiftui demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F9B50F2848589300D0E208 /* swiftui_demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_demoApp.swift; sourceTree = "<group>"; };
 		67F9B5112848589300D0E208 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				67F9B5112848589300D0E208 /* ContentView.swift */,
 				67F9B5132848589500D0E208 /* Assets.xcassets */,
 				67F9B5152848589500D0E208 /* Preview Content */,
+				67E31BB52851A03400A17336 /* styles.swift */,
+				67E31BB72851A64800A17336 /* AccountView.swift */,
 			);
 			path = "swiftui demo";
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E31BB82851A64800A17336 /* AccountView.swift in Sources */,
+				67E31BB62851A03400A17336 /* styles.swift in Sources */,
 				67F9B5122848589300D0E208 /* ContentView.swift in Sources */,
 				67F9B5102848589300D0E208 /* swiftui_demoApp.swift in Sources */,
 			);

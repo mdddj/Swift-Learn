@@ -15,8 +15,11 @@ struct ContentView: View {
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 26.0, height: 26.0)
-                .cornerRadius(20.0)
-                .padding()
+                .cornerRadius(10.0)
+                .padding(9)
+                .background(.ultraThinMaterial,in: RoundedRectangle(
+                    cornerRadius: 20.0,style: .continuous))
+                .strokeStyle(cornerRadius: 16)
 
             
             Text("SwiftUI for ios 15")
@@ -47,6 +50,7 @@ struct ContentView: View {
 //        .cornerRadius(30.0)
        // .mask(RoundedRectangle(cornerRadius: 30.0,style: .continuous)) // Ellipse() 椭圆 Rectangle 矩形 Capsule 胶囊
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 10, y: 10)
+        .strokeStyle()
         .padding(.horizontal, 20)
         .background(
             Image("Blob 1")
@@ -65,6 +69,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.light)
+            .preferredColorScheme(.dark)
     }
 }

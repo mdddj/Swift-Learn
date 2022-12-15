@@ -1,0 +1,6 @@
+framework module Pods_FlutterNet {
+  umbrella header "Pods-FlutterNet-umbrella.h"
+
+  export *
+  module * { export * }
+}

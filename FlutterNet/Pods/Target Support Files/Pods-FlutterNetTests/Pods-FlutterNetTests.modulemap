@@ -1,0 +1,6 @@
+framework module Pods_FlutterNetTests {
+  umbrella header "Pods-FlutterNetTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

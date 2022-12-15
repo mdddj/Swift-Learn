@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'FlutterNet' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FlutterNet
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'Moya', '~> 13.0.1'
+
+  target 'FlutterNetTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FlutterNetUITests' do
+    # Pods for testing
+  end
+
+end
